@@ -1,12 +1,13 @@
 ﻿using Project.Models;
 using System.ComponentModel;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace Project.ViewModels {
     class MainWindowViewModel : INotifyPropertyChanged {
 
         private UserControl _currentControl;
-        public event PropertyChangedEventHandler PropertyChanged;
+        
 
         public UserControl CurrentControl {
             get {
@@ -18,9 +19,11 @@ namespace Project.ViewModels {
             }
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName) {
             if(PropertyChanged != null) {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+                MessageBox.Show("and here");
             }
         }
     }
