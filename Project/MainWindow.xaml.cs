@@ -13,6 +13,7 @@ namespace Project {
         private FindCustomerControl _findCustomerControl;
         private EditCustomerControl _editCustomerControl;
         private DeleteCustomerControl _deleteCustomerControl;
+        private AddCargoPlaneControl _addCargoPlaneControl;
 
         public MainWindow() {
             InitializeComponent();
@@ -21,6 +22,8 @@ namespace Project {
             _findCustomerControl = new FindCustomerControl();
             _editCustomerControl = new EditCustomerControl();
             _deleteCustomerControl = new DeleteCustomerControl();
+            _addCargoPlaneControl = new AddCargoPlaneControl();
+
             DataContext = _viewModel;
         }
 
@@ -38,6 +41,10 @@ namespace Project {
 
         private void btnDeleteCustomer_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _deleteCustomerControl;
+        }
+
+        private void btnAddCargoPlane_Click(object sender, RoutedEventArgs e) {
+            _viewModel.CurrentControl = _addCargoPlaneControl;
         }
     }
 }
