@@ -54,17 +54,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="TestControl2.xaml.cs">
-      <DependentUpon>TestControl2.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\AddCustomerControl.xaml.cs">
       <DependentUpon>AddCustomerControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\EditCustomerControl.xaml.cs">
+      <DependentUpon>EditCustomerControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\FindCustomerControl.xaml.cs">
       <DependentUpon>FindCustomerControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\TestControl.xaml.cs">
-      <DependentUpon>TestControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Page Include="MainWindow.xaml">
@@ -79,19 +76,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="TestControl2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UserControls\AddCustomerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\FindCustomerControl.xaml">
+    <Page Include="UserControls\EditCustomerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\TestControl.xaml">
+    <Page Include="UserControls\FindCustomerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

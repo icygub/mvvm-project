@@ -13,12 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Project {
+namespace Project.UserControls {
     /// <summary>
-    /// Interaction logic for TestControl2.xaml
+    /// Interaction logic for DeleteCustomerControl.xaml
     /// </summary>
-    public partial class TestControl2 : UserControl {
-        public TestControl2() {
+    public partial class DeleteCustomerControl : UserControl {
+        public DeleteCustomerControl() {
             InitializeComponent();
         }
     }

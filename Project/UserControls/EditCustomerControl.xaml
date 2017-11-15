@@ -1,36 +1,43 @@
-﻿<UserControl x:Class="Project.UserControls.AddCustomerControl"
+﻿<UserControl x:Class="Project.UserControls.EditCustomerControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             mc:Ignorable="d" Height="610" Width="1100">
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="610" d:DesignWidth="1110">
     <Grid>
-        <StackPanel Orientation="Horizontal"  HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="737" Margin="71,10,0,0">
+        <StackPanel Orientation="Horizontal"  HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="557" Margin="71,10,0,0">
             <TextBlock x:Name="TxtBlkCustomerName" TextWrapping="Wrap" Text="Name" Margin="0,0,20,0" FontSize="16" Padding="0" TextAlignment="Center" VerticalAlignment="Center" Width="74" Height="30" HorizontalAlignment="Center"/>
-            <TextBox x:Name="TxtBxCustomerName" TextWrapping="Wrap" Width="642" Margin="0" FontSize="14" TextAlignment="Center" Padding="0,0,0,5" Height="48"/>
+            <TextBox x:Name="TxtBxEditCustomerName" TextWrapping="Wrap" Width="466" Margin="0" FontSize="14" TextAlignment="Center" Padding="0,0,0,5" Height="48"/>
         </StackPanel>
+
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="737" Margin="71,82,0,0">
             <TextBlock x:Name="TxtBlkCustomerStreet" TextWrapping="Wrap" Text="Street Address" Margin="0,0,20,0" Width="74" TextAlignment="Center" FontSize="16" Padding="0"/>
-            <TextBox x:Name="TxtBxCustomerStreet" TextWrapping="Wrap" Margin="0" Width="641" Height="47"/>
+            <TextBox x:Name="TxtBxEditCustomerStreet" TextWrapping="Wrap" Margin="0" Width="641" Height="47"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="737" Margin="71,149,0,0">
             <TextBlock x:Name="TxtBlkCustomerCity" TextWrapping="Wrap" Text="City" TextAlignment="Center" FontSize="14" Width="93" Height="20" HorizontalAlignment="Center"/>
-            <TextBox x:Name="TxtBxCustomerCity" TextWrapping="Wrap" Width="644" Margin="0,0,0,0.4"/>
+            <TextBox x:Name="TxtBxEditCustomerCity" TextWrapping="Wrap" Width="644" Margin="0,0,0,0.4"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="737" Margin="71,224,0,0">
             <TextBlock x:Name="TxtBlkCustomerState" TextWrapping="Wrap" Text="State" Width="90" FontSize="14" TextAlignment="Center" Margin="0" Height="16"/>
-            <TextBox x:Name="TxtBxCustomerState" TextWrapping="Wrap" Width="685" Margin="0,0,0,0.6"/>
+            <TextBox x:Name="TxtBxEditCustomerState" TextWrapping="Wrap" Width="685" Margin="0,0,0,0.6"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="737" Margin="71,299,0,0">
             <TextBlock x:Name="TxtBlkCustomerZip" TextWrapping="Wrap" Text="Zip Code" TextAlignment="Center" Width="89" Margin="0" VerticalAlignment="Center"/>
-            <TextBox x:Name="TxtBxCustomerZip" Height="73" TextWrapping="Wrap" Margin="0,0,0,-0.2" Width="648" Padding="0,0,5,0" VerticalAlignment="Bottom"/>
+            <TextBox x:Name="TxtBxEditCustomerZip" Height="52" TextWrapping="Wrap" Width="648" Padding="0,0,5,0" VerticalAlignment="Bottom"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="737" Margin="71,362,0,0">
             <TextBlock x:Name="TxtBlkCustomerEmail" TextWrapping="Wrap" Text="E-Mail" Margin="0,10,0,10.2" Width="88" FontSize="14" TextAlignment="Center"/>
-            <TextBox x:Name="TxtBxCustomerEmail" TextWrapping="Wrap" Margin="0,0,0,0.2" Width="686"/>
+            <TextBox x:Name="TxtBxEditCustomerEmail" TextWrapping="Wrap" Margin="0,0,0,0.2" Width="686"/>
         </StackPanel>
 
 
-        <Button x:Name="BtnAddCustomer" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="196" Margin="384,467,0,0" Height="86"/>
+        <Button x:Name="BtnEditCustomer" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="196" Margin="384,467,0,0" Height="86"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Margin="633,21,0,0" Height="29" Width="56" FontSize="20" TextAlignment="Center"/>
+        <TextBox x:Name="BtnEditId" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Margin="694,10,0,0" FontSize="24"/>
+
     </Grid>
 </UserControl>

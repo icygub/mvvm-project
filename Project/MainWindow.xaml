@@ -14,7 +14,7 @@
             <TextBlock x:Name="blkCustomer" TextWrapping="Wrap" Text="Customer" FontSize="22" Width="100" TextAlignment="Center" Margin="0"/>
             <Button x:Name="btnAddCustomer" Content="Add" Width="99" Height="37" Margin="0,0,0,5" FontSize="14" Click="btnAddCustomer_Click"/>
             <Button x:Name="btnFindCustomer" Content="Find" Width="99" Height="37" Margin="0,0,0,5" FontSize="14" Click="btnFindCustomer_Click"/>
-            <Button x:Name="btnEditCustomer" Content="Edit" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
+            <Button x:Name="btnEditCustomer" Content="Edit" Width="99" Height="37" Margin="0,0,0,5" FontSize="14" Click="btnEditCustomer_Click"/>
             <Button x:Name="btnDeleteCustomer" Content="Delete" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
 
             <TextBlock x:Name="blkCargoPlane" TextWrapping="Wrap" Text="Cargo Plane" FontSize="22" Width="100" TextAlignment="Center" Margin="0,20,0,0"/>
