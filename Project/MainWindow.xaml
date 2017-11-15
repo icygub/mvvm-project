@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="773.885" Width="1427.427">
     <Grid>
+        
         <ListView x:Name="listvwButtonHolder" HorizontalAlignment="Left" Height="744" VerticalAlignment="Top" Width="119" Padding="0,60,0,0">
             <TextBlock x:Name="blkCustomer" TextWrapping="Wrap" Text="Customer" FontSize="22" Width="100" TextAlignment="Center" Margin="0"/>
-            <Button x:Name="btnAddCustomer" Content="Add" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
+            <Button x:Name="btnAddCustomer" Content="Add" Width="99" Height="37" Margin="0,0,0,5" FontSize="14" Click="btnAddCustomer_Click"/>
             <Button x:Name="btnFindCustomer" Content="Find" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
             <Button x:Name="btnEditCustomer" Content="Edit" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
             <Button x:Name="btnDeleteCustomer" Content="Delete" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
@@ -21,10 +22,9 @@
             <Button x:Name="btnDeleteCargoPlane" Content="Delete" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
             <Button x:Name="btnScheduleCargoPlane" Content="Schedule a Plane" Width="99" Height="37" Margin="0,0,0,5"/>
             <Button x:Name="btnViewSchedules" Content="View Schedules" Width="99" Height="37"/>
-
-
-
         </ListView>
+
+        <ContentControl x:Name="contentControl" Margin="172,42,66.8,46" Width="Auto" Opacity="1" Background="Transparent"/>
 
     </Grid>
 </Window>

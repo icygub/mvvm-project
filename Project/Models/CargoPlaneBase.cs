@@ -1,7 +1,10 @@
 ﻿
+using System.Collections.Generic;
+
 namespace Project.Models {
     class CargoPlaneBase : Database {
-        List<CargoPlane> cargoPlanes;
+
+        private List<BaseObject> cargoPlanes;
 
         public CargoPlaneBase() : base() {
 
