@@ -60,6 +60,9 @@
     <Compile Include="UserControls\AddCustomerControl.xaml.cs">
       <DependentUpon>AddCustomerControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\FindCustomerControl.xaml.cs">
+      <DependentUpon>FindCustomerControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\TestControl.xaml.cs">
       <DependentUpon>TestControl.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\AddCustomerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\FindCustomerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
