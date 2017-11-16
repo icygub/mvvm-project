@@ -60,11 +60,20 @@
     <Compile Include="UserControls\AddCustomerControl.xaml.cs">
       <DependentUpon>AddCustomerControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DeleteCargoPlaneControl.xaml.cs">
+      <DependentUpon>DeleteCargoPlaneControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DeleteCustomerControl.xaml.cs">
       <DependentUpon>DeleteCustomerControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\EditCargoPlaneControl.xaml.cs">
+      <DependentUpon>EditCargoPlaneControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\EditCustomerControl.xaml.cs">
       <DependentUpon>EditCustomerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FindCargoPlaneControl.xaml.cs">
+      <DependentUpon>FindCargoPlaneControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\FindCustomerControl.xaml.cs">
       <DependentUpon>FindCustomerControl.xaml</DependentUpon>
@@ -90,11 +99,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\DeleteCargoPlaneControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\DeleteCustomerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\EditCargoPlaneControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\EditCustomerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\FindCargoPlaneControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
