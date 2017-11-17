@@ -78,6 +78,12 @@
     <Compile Include="UserControls\FindCustomerControl.xaml.cs">
       <DependentUpon>FindCustomerControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ScheduleACargoPlaneControl.xaml.cs">
+      <DependentUpon>ScheduleACargoPlaneControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ViewSchedulesControl.xaml.cs">
+      <DependentUpon>ViewSchedulesControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -120,6 +126,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\FindCustomerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ScheduleACargoPlaneControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ViewSchedulesControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

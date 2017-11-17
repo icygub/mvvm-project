@@ -14,6 +14,11 @@ namespace Project {
         private EditCustomerControl _editCustomerControl;
         private DeleteCustomerControl _deleteCustomerControl;
         private AddCargoPlaneControl _addCargoPlaneControl;
+        private FindCargoPlaneControl _findCargoPlaneControl;
+        private EditCargoPlaneControl _editCargoPlaneControl;
+        private DeleteCargoPlaneControl _deleteCargoPlaneControl;
+        private ScheduleACargoPlaneControl _scheduleACargoPlaneControl;
+        private ViewSchedulesControl _viewSchedulesControl;
 
         public MainWindow() {
             InitializeComponent();
@@ -23,7 +28,11 @@ namespace Project {
             _editCustomerControl = new EditCustomerControl();
             _deleteCustomerControl = new DeleteCustomerControl();
             _addCargoPlaneControl = new AddCargoPlaneControl();
-
+            _findCargoPlaneControl = new FindCargoPlaneControl();
+            _editCargoPlaneControl = new EditCargoPlaneControl();
+            _deleteCargoPlaneControl = new DeleteCargoPlaneControl();
+            _scheduleACargoPlaneControl = new ScheduleACargoPlaneControl();
+            _viewSchedulesControl = new ViewSchedulesControl();
             DataContext = _viewModel;
         }
 
@@ -45,6 +54,26 @@ namespace Project {
 
         private void btnAddCargoPlane_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _addCargoPlaneControl;
+        }
+
+        private void btnFindCargoPlane_Click(object sender, RoutedEventArgs e) {
+            _viewModel.CurrentControl = _findCargoPlaneControl;
+        }
+
+        private void btnEditCargoPlane_Click(object sender, RoutedEventArgs e) {
+            _viewModel.CurrentControl = _editCargoPlaneControl;
+        }
+
+        private void btnDeleteCargoPlane_Click(object sender, RoutedEventArgs e) {
+            _viewModel.CurrentControl = _deleteCargoPlaneControl;
+        }
+
+        private void btnScheduleCargoPlane_Click(object sender, RoutedEventArgs e) {
+            _viewModel.CurrentControl = _scheduleACargoPlaneControl;
+        }
+
+        private void btnViewSchedules_Click(object sender, RoutedEventArgs e) {
+            _viewModel.CurrentControl = _viewSchedulesControl;                                              
         }
     }
 }

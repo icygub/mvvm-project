@@ -19,11 +19,11 @@
 
             <TextBlock x:Name="blkCargoPlane" TextWrapping="Wrap" Text="Cargo Plane" FontSize="22" Width="100" TextAlignment="Center" Margin="0,20,0,0"/>
             <Button x:Name="btnAddCargoPlane" Content="Add" Width="99" Height="37" Margin="0,0,0,5" FontSize="14" Click="btnAddCargoPlane_Click"/>
-            <Button x:Name="btnFindCargoPlane" Content="Find" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
-            <Button x:Name="btnEditCargoPlane" Content="Edit" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
-            <Button x:Name="btnDeleteCargoPlane" Content="Delete" Width="99" Height="37" Margin="0,0,0,5" FontSize="14"/>
-            <Button x:Name="btnScheduleCargoPlane" Content="Schedule a Plane" Width="99" Height="37" Margin="0,0,0,5"/>
-            <Button x:Name="btnViewSchedules" Content="View Schedules" Width="99" Height="37"/>
+            <Button x:Name="btnFindCargoPlane" Content="Find" Width="99" Height="37" Margin="0,0,0,5" FontSize="14" Click="btnFindCargoPlane_Click"/>
+            <Button x:Name="btnEditCargoPlane" Content="Edit" Width="99" Height="37" Margin="0,0,0,5" FontSize="14" Click="btnEditCargoPlane_Click"/>
+            <Button x:Name="btnDeleteCargoPlane" Content="Delete" Width="99" Height="37" Margin="0,0,0,5" FontSize="14" Click="btnDeleteCargoPlane_Click"/>
+            <Button x:Name="btnScheduleCargoPlane" Content="Schedule a Plane" Width="99" Height="37" Margin="0,0,0,5" Click="btnScheduleCargoPlane_Click"/>
+            <Button x:Name="btnViewSchedules" Content="View Schedules" Width="99" Height="37" Click="btnViewSchedules_Click"/>
         </ListView>
 
         <ContentControl x:Name="contentControl" Content="{Binding Path=CurrentControl}" Margin="156,36,36.8,33" Width="Auto" Opacity="1" Background="Transparent"/>
