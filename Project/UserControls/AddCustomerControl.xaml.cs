@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using Project.ViewModels;
+using System.Windows.Controls;
 
 namespace Project.UserControls {
     /// <summary>
@@ -7,6 +8,7 @@ namespace Project.UserControls {
     public partial class AddCustomerControl : UserControl {
         public AddCustomerControl() {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }

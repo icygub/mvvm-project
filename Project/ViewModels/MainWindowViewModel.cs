@@ -6,9 +6,9 @@ using System.Windows.Controls;
 namespace Project.ViewModels {
     class MainWindowViewModel : INotifyPropertyChanged {
 
-        private UserControl _currentControl;
+        private static UserControl _currentControl;
+        private static string _name;
         
-
         public UserControl CurrentControl {
             get {
                 return _currentControl;
@@ -16,6 +16,15 @@ namespace Project.ViewModels {
             set {
                 _currentControl = value;
                 OnPropertyChanged(nameof(CurrentControl));
+            }
+        }
+
+        public string Name {
+            get { return _name; }
+            set {
+                _name = value;
+                OnPropertyChanged(nameof(Name));
+                MessageBox.Show(_name);
             }
         }
 

@@ -1,6 +1,12 @@
 ﻿
+using System.ComponentModel;
+
 namespace Project.Models {
-    public class Customer : BaseObject {
+    public class Customer : BaseObject, INotifyPropertyChanged {
+
+        private string _name;
+        private Address _address;
+        private string _email;
 
         public Customer(string name, int id) : base(id) {
             this.Name = name;
@@ -13,15 +19,33 @@ namespace Project.Models {
         }
 
         public string Name {
-            set; get;
+            get { return _name; }
+            set {
+                _name = value;
+                OnPropertyChanged(nameof(Name));
+            }
         }
 
         public Address Address {
-            get; set;
+            get { return _address; }
+            set {
+                _address = value;
+                OnPropertyChanged(nameof(Address));
+            }
         }
 
         public string Email {
-            get; set;
+            get { return _email; }
+            set {
+                _email = value;
+                OnPropertyChanged(nameof(Email));
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyChanged(string propertyName) {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 

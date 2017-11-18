@@ -7,7 +7,7 @@
     <Grid>
         <StackPanel Orientation="Horizontal"  HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="737" Margin="71,10,0,0">
             <TextBlock x:Name="TxtBlkCustomerName" TextWrapping="Wrap" Text="Name" Margin="0,0,20,0" FontSize="16" Padding="0" TextAlignment="Center" VerticalAlignment="Center" Width="74" Height="30" HorizontalAlignment="Center"/>
-            <TextBox x:Name="TxtBxCustomerName" TextWrapping="Wrap" Width="642" Margin="0" FontSize="14" TextAlignment="Center" Padding="0,0,0,5" Height="48"/>
+            <TextBox x:Name="TxtBxCustomerName" Text="{Binding Path=Name}" TextWrapping="Wrap" Width="642" Margin="0" FontSize="14" TextAlignment="Center" Padding="0,0,0,5" Height="48"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="737" Margin="71,82,0,0">
             <TextBlock x:Name="TxtBlkCustomerStreet" TextWrapping="Wrap" Text="Street Address" Margin="0,0,20,0" Width="74" TextAlignment="Center" FontSize="16" Padding="0"/>

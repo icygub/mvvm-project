@@ -8,17 +8,17 @@ namespace Project {
     /// </summary>
     public partial class MainWindow : Window {
 
-        private MainWindowViewModel _viewModel;
-        private AddCustomerControl _addCustomerControl;
-        private FindCustomerControl _findCustomerControl;
-        private EditCustomerControl _editCustomerControl;
-        private DeleteCustomerControl _deleteCustomerControl;
-        private AddCargoPlaneControl _addCargoPlaneControl;
-        private FindCargoPlaneControl _findCargoPlaneControl;
-        private EditCargoPlaneControl _editCargoPlaneControl;
-        private DeleteCargoPlaneControl _deleteCargoPlaneControl;
-        private ScheduleACargoPlaneControl _scheduleACargoPlaneControl;
-        private ViewSchedulesControl _viewSchedulesControl;
+        private static MainWindowViewModel _viewModel;
+        private static AddCustomerControl _addCustomerControl;
+        private static FindCustomerControl _findCustomerControl;
+        private static EditCustomerControl _editCustomerControl;
+        private static DeleteCustomerControl _deleteCustomerControl;
+        private static AddCargoPlaneControl _addCargoPlaneControl;
+        private static FindCargoPlaneControl _findCargoPlaneControl;
+        private static EditCargoPlaneControl _editCargoPlaneControl;
+        private static DeleteCargoPlaneControl _deleteCargoPlaneControl;
+        private static ScheduleACargoPlaneControl _scheduleACargoPlaneControl;
+        private static ViewSchedulesControl _viewSchedulesControl;
 
         public MainWindow() {
             InitializeComponent();
@@ -39,41 +39,34 @@ namespace Project {
         private void btnAddCustomer_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _addCustomerControl;
         }
-
         private void btnFindCustomer_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _findCustomerControl;
         }
-
         private void btnEditCustomer_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _editCustomerControl;
         }
-
         private void btnDeleteCustomer_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _deleteCustomerControl;
         }
-
         private void btnAddCargoPlane_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _addCargoPlaneControl;
         }
-
         private void btnFindCargoPlane_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _findCargoPlaneControl;
         }
-
         private void btnEditCargoPlane_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _editCargoPlaneControl;
         }
-
         private void btnDeleteCargoPlane_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _deleteCargoPlaneControl;
         }
-
         private void btnScheduleCargoPlane_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _scheduleACargoPlaneControl;
         }
-
         private void btnViewSchedules_Click(object sender, RoutedEventArgs e) {
             _viewModel.CurrentControl = _viewSchedulesControl;                                              
         }
+
+
     }
 }
