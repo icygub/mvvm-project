@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel Orientation="Horizontal"  HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="557" Margin="71,10,0,0">
             <TextBlock x:Name="TxtBlkCustomerName" TextWrapping="Wrap" Text="Name" Margin="0,0,20,0" FontSize="16" Padding="0" TextAlignment="Center" VerticalAlignment="Center" Width="74" Height="30" HorizontalAlignment="Center"/>
-            <TextBox x:Name="TxtBxEditCustomerName" TextWrapping="Wrap" Width="466" Margin="0" FontSize="14" TextAlignment="Center" Padding="0,0,0,5" Height="48"/>
+            <TextBox x:Name="TxtBxEditCustomerName" TextWrapping="Wrap" Width="462" Margin="0" FontSize="14" TextAlignment="Center" Padding="0,0,0,5" Height="48"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="737" Margin="71,82,0,0">
@@ -34,10 +34,10 @@
         </StackPanel>
 
 
-        <Button x:Name="BtnEditCustomer" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="196" Margin="384,467,0,0" Height="86"/>
+        <Button x:Name="BtnEditCustomer" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="171" Margin="384,467,0,0" Height="57" FontSize="20" Click="BtnEditCustomer_Click"/>
 
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Margin="633,21,0,0" Height="29" Width="56" FontSize="20" TextAlignment="Center"/>
-        <TextBox x:Name="BtnEditId" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Margin="694,10,0,0" FontSize="24"/>
+        <TextBox x:Name="TxtBxEditId" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Margin="694,10,0,0" FontSize="24"/>
 
     </Grid>
 </UserControl>

@@ -49,7 +49,12 @@ namespace Project.Models {
         }
     }
 
-    public class Address {
+    public class Address : INotifyPropertyChanged {
+        private string _street;
+        private string _city;
+        private string _state;
+        private int _zipCode;
+
         public Address(string street, string city, string state, int zipCode) {
             this.Street = street;
             this.City = city;
@@ -58,19 +63,40 @@ namespace Project.Models {
         }
 
         public string Street {
-            get; set;
+            get { return _street; }
+            set {
+                _street = value;
+                OnPropertyChanged(nameof(Street));
+            }
         }
 
         public string City {
-            get; set;
+            get { return _city; }
+            set {
+                _city = value;
+                OnPropertyChanged(nameof(City));
+            }
         }
 
         public string State {
-            get; set;
+            get { return _state; }
+            set {
+                _state = value;
+                OnPropertyChanged(nameof(State));
+            }
         }
 
         public int ZipCode {
-            get; set;
+            get { return _zipCode; }
+            set {
+                _zipCode = value;
+                OnPropertyChanged(nameof(ZipCode));
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged(string propertyName) {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

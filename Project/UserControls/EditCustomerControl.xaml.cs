@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using Project.ViewModels;
+using System;
+using System.Windows.Controls;
 
 
 namespace Project.UserControls {
@@ -6,8 +8,20 @@ namespace Project.UserControls {
     /// Interaction logic for EditCustomer.xaml
     /// </summary>
     public partial class EditCustomerControl : UserControl {
+
+        private static MainWindowViewModel _model;
+
         public EditCustomerControl() {
             InitializeComponent();
+            _model = new MainWindowViewModel();
+            DataContext = _model;
+        }
+
+        private void BtnEditCustomer_Click(object sender, System.Windows.RoutedEventArgs e) {
+            int id = Int32.Parse(TxtBxEditId.Text);
+            string name = TxtBxEditCustomerName.Text;
+            string street = TxtBxEditCustomerStreet.
+            //_model.CustomerBase.Edit(id, id, );
         }
     }
 }

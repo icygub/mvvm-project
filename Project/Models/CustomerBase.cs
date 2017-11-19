@@ -30,18 +30,23 @@ namespace Project.Models {
 
         //Find() in the base class Database
 
-        public bool Edit(int oldId, int newId, string newName) {
+        public bool Edit(int oldId, int newId, string newName, string street, string city, string state, string zip, string email) {
             if (newName == "") {
                 return false;
             }
 
             bool idWasEdited = base.Edit(oldId, newId);
-            if (!idWasEdited) {
-                return false;
-            }
+      
 
             Customer customer = (Customer)Find(newId);
             customer.Name = newName;
+            if(!string.IsNullOrEmpty(street)) { customer.Address.Street = street; }
+            if (!string.IsNullOrEmpty(city)) { customer.Address.City = city; }
+            if (!string.IsNullOrEmpty(state)) { customer.Address.State = state; }
+            if (!string.IsNullOrEmpty(zip)) { customer.Address.ZipCode = Int32.Parse(zip); }
+            if (!string.IsNullOrEmpty(email)) { customer.Email = email; }
+
+
             return true;
         }
 
