@@ -18,10 +18,7 @@ namespace Project.UserControls {
         }
 
         private void BtnEditCustomer_Click(object sender, System.Windows.RoutedEventArgs e) {
-            int id = Int32.Parse(TxtBxEditId.Text);
-            string name = TxtBxEditCustomerName.Text;
-            string street = TxtBxEditCustomerStreet.
-            //_model.CustomerBase.Edit(id, id, );
+            
         }
     }
 }

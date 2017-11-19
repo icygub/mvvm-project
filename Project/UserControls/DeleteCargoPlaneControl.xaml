@@ -8,8 +8,8 @@
              d:DesignHeight="610" d:DesignWidth="1100">
     <Grid>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Plane Number" VerticalAlignment="Top" Margin="185,75,0,0" Height="33" Width="134" FontSize="20"/>
-        <TextBox x:Name="TxtBxDeletePlane" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="353" Margin="358,75,0,0" FontSize="18"/>
-        <Button x:Name="BtnDeletePlane" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Margin="445,134,0,0" Height="50" FontSize="20"/>
+        <TextBox x:Name="TxtBxDeletePlane" Text="{Binding Path=DPNumber}" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="353" Margin="358,75,0,0" FontSize="18"/>
+        <Button x:Name="BtnDeletePlane" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Margin="445,134,0,0" Height="50" FontSize="20" Click="BtnDeletePlane_Click"/>
 
 
 

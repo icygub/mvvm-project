@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,12 @@ namespace Project.UserControls
     /// </summary>
     public partial class ViewSchedulesControl : UserControl
     {
+        private static MainWindowViewModel _model;
+
         public ViewSchedulesControl()
         {
             InitializeComponent();
+            DataContext = _model;
         }
     }
 }

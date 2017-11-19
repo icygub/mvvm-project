@@ -8,7 +8,7 @@
              d:DesignHeight="610" d:DesignWidth="1100">
     <Grid>
         <TextBlock x:Name="TxtBlkSearchById" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Margin="91,100,0,0" Height="34" Width="90" TextAlignment="Center" FontSize="18"/>
-        <TextBox x:Name="TxtBxSearchById" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="759" Margin="186,100,0,0" FontSize="24"/>
+        <TextBox x:Name="TxtBxSearchById" Text="{Binding Path=FCId}" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="759" Margin="186,100,0,0" FontSize="24"/>
         <Button x:Name="BtnFindCustomer" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="202" Margin="465,176,0,0" Height="53" FontSize="18" Click="BtnFindCustomer_Click"/>
         <TextBlock x:Name="TxtBlkDisplayFoundCustomer" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="396,307,0,0" Height="209" Width="358" FontSize="20"/>
 

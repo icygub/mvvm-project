@@ -17,7 +17,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ACName));
             }
         }
-
         public string ACId {
             get { return _acId; }
             set {
@@ -25,7 +24,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ACId));
             }
         }
-
         public string ACStreet {
             get { return _acStreet; }
             set {
@@ -33,7 +31,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ACStreet));
             }
         }
-
         public string ACCity {
             get { return _acCity; }
             set {
@@ -41,7 +38,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ACCity));
             }
         }
-
         public string ACState {
             get { return _acState; }
             set {
@@ -49,7 +45,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ACState));
             }
         }
-
         public string ACZipCode {
             get { return _acZipCode; }
             set {
@@ -57,7 +52,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ACZipCode));
             }
         }
-
         public string ACEmail {
             get { return _acEmail; }
             set {
@@ -65,7 +59,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ACEmail));
             }
         }
-
         public string FCId {
             get { return _fcId; }
             set {
@@ -73,7 +66,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(FCId));
             }
         }
-
         public string ECName {
             get { return _ecName; }
             set {
@@ -81,7 +73,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ECName));
             }
         }
-
         public string ECId {
             get { return _ecId; }
             set {
@@ -89,7 +80,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ECId));
             }
         }
-
         public string ECStreet {
             get { return _ecStreet; }
             set {
@@ -97,7 +87,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ECStreet));
             }
         }
-
         public string ECCity {
             get { return _ecCity; }
             set {
@@ -105,7 +94,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ECCity));
             }
         }
-
         public string ECState {
             get { return _ecState; }
             set {
@@ -113,7 +101,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ECState));
             }
         }
-
         public string ECZipCode {
             get { return _ecZipCode; }
             set {
@@ -121,7 +108,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ECZipCode));
             }
         }
-
         public string ECEmail {
             get { return _ecEmail; }
             set {
@@ -129,7 +115,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(ECEmail));
             }
         }
-
         public string DCId {
             get { return _dcId; }
             set {
@@ -137,7 +122,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(DCId));
             }
         }
-
         public string APNumber {
             get { return _apNumber; }
             set {
@@ -145,7 +129,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(APNumber));
             }
         }
-
         public string APCompany {
             get { return _apCompany; }
             set {
@@ -153,15 +136,13 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(APCompany));
             }
         }
-
         public string APMileage {
-            get { return _apMilage; }
+            get { return _apMileage; }
             set {
-                _apMilage = value;
+                _apMileage = value;
                 OnPropertyChanged(nameof(APMileage));
             }
         }
-
         public string APSeatCapacity {
             get { return _apSeatCapacity; }
             set {
@@ -169,7 +150,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(APSeatCapacity));
             }
         }
-
         public string APWeightCapacity {
             get { return _apWeightCapacity; }
             set {
@@ -177,7 +157,6 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(APWeightCapacity));
             }
         }
-
         public string FPNumber {
             get { return _fpNumber; }
             set {
@@ -185,8 +164,76 @@ namespace Project.ViewModels {
                 OnPropertyChanged(nameof(FPNumber));
             }
         }
-
-        
+        public string EPNumber {
+            get { return _epNumber; }
+            set {
+                _epNumber = value;
+                OnPropertyChanged(nameof(EPNumber));
+            }
+        }
+        public string EPCompany {
+            get { return _epCompany; }
+            set {
+                _epCompany = value;
+                OnPropertyChanged(nameof(EPCompany));
+            }
+        }
+        public string EPMileage {
+            get { return _epMileage; }
+            set {
+                _epMileage = value;
+                OnPropertyChanged(nameof(EPMileage));
+            }
+        }
+        public string EPSeatCapacity {
+            get { return _epSeatCapacity; }
+            set {
+                _epSeatCapacity = value;
+                OnPropertyChanged(nameof(EPSeatCapacity));
+            }
+        }
+        public string EPWeightCapacity {
+            get { return _epWeightCapacity; }
+            set {
+                _epWeightCapacity = value;
+                OnPropertyChanged(nameof(EPWeightCapacity));
+            }
+        }
+        public string DPNumber {
+            get { return _dpNumber; }
+            set {
+                _dpNumber = value;
+                OnPropertyChanged(nameof(DPNumber));
+            }
+        }
+        public string SPCustomer {
+            get { return _spCustomer; }
+            set {
+                _spCustomer = value;
+                OnPropertyChanged(nameof(SPCustomer));
+            }
+        }
+        public string SPNumber {
+            get { return _spNumber; }
+            set {
+                _spNumber = value;
+                OnPropertyChanged(nameof(SPNumber));
+            }
+        }
+        public string SPFrom {
+            get { return _spFrom; }
+            set {
+                _spFrom = value;
+                OnPropertyChanged(nameof(SPFrom));
+            }
+        }
+        public string SPUntil {
+            get { return _spUntil; }
+            set {
+                _spUntil = value;
+                OnPropertyChanged(nameof(SPUntil));
+            }
+        }
 
         //AddCustomerControl textboxes
         private static string _acName;
@@ -215,52 +262,14 @@ namespace Project.ViewModels {
         //AddCargoPlaneControl
         private static string _apNumber;
         private static string _apCompany;
-        private static string _apMilage;
+        private static string _apMileage;
         private static string _apSeatCapacity;
         private static string _apWeightCapacity;
 
         //FindCargoPlaneControl
         private static string _fpNumber;
 
-        public string EPNumber {
-            get { return _epNumber; }
-            set {
-                _epNumber = value;
-                OnPropertyChanged(nameof(EPNumber));
-            }
-        }
-
-        public string EPCompany {
-            get { return _epCompany; }
-            set {
-                _epCompany = value;
-                OnPropertyChanged(nameof(EPCompany));
-            }
-        }
-
-        public string EPMileage {
-            get { return _epMileage; }
-            set {
-                _epMileage = value;
-                OnPropertyChanged(nameof(EPMileage));
-            }
-        }
-
-        public string EPSeatCapacity {
-            get { return _epSeatCapacity; }
-            set {
-                _epSeatCapacity = value;
-                OnPropertyChanged(nameof(EPSeatCapacity));
-            }
-        }
-
-        public string EPWeightCapacity {
-            get { return _epWeightCapacity; }
-            set {
-                _epWeightCapacity = value;
-                OnPropertyChanged(nameof(EPWeightCapacity));
-            }
-        }
+        
 
         //EditCargoPlaneControl
         private static string _epNumber;
@@ -271,7 +280,13 @@ namespace Project.ViewModels {
 
         //DeleteCargoPlaneControl
         private static string _dpNumber;
-        
+
+        //ScheduleAPlaneControl
+        private static string _spCustomer;
+        private static string _spNumber;
+        private static string _spFrom;
+        private static string _spUntil;
+
         public MainWindowViewModel() {
             if (_customerBase == null)
                 _customerBase = new CustomerBase();
@@ -311,15 +326,6 @@ namespace Project.ViewModels {
         public int getCustomerBaseSize() {
             return _customerBase.getListSize();
         }
-
-        //public string Name {
-        //    get { return _name; }
-        //    set {
-        //        _name = value;
-        //        OnPropertyChanged(nameof(Name));
-        //        MessageBox.Show(_name);
-        //    }
-        //}
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName) {

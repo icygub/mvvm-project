@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,8 +19,17 @@ namespace Project.UserControls {
     /// Interaction logic for AddCargoPlaneControl.xaml
     /// </summary>
     public partial class AddCargoPlaneControl : UserControl {
+
+        private static MainWindowViewModel _model;
+
         public AddCargoPlaneControl() {
             InitializeComponent();
+            _model = new MainWindowViewModel();
+            DataContext = _model;
+        }
+
+        private void BtnAddCargoPlane_Click(object sender, RoutedEventArgs e) {
+
         }
     }
 }

@@ -7,31 +7,31 @@
     <Grid>
         <StackPanel Orientation="Horizontal"  HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="737" Margin="71,10,0,0">
             <TextBlock x:Name="TxtBlkCustomerName" TextWrapping="Wrap" Text="Name" Margin="0,0,20,0" FontSize="16" Padding="0" TextAlignment="Center" VerticalAlignment="Center" Width="74" Height="30" HorizontalAlignment="Center"/>
-            <TextBox x:Name="TxtBxCustomerName" TextWrapping="Wrap" Width="642" Margin="0" FontSize="14" TextAlignment="Center" Padding="0,0,0,5" Height="48"/>
+            <TextBox x:Name="TxtBxCustomerName" Text="{Binding Path=ACName}" TextWrapping="Wrap" Width="642" Margin="0" FontSize="14" TextAlignment="Center" Padding="0,0,0,5" Height="48"/>
         </StackPanel>
 
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Margin="830,24,0,0" Height="34" Width="42" FontSize="20"/>
-        <TextBox x:Name="TxtBxCustomerId" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" Margin="877,24,0,0" FontSize="18"/>
+        <TextBox x:Name="TxtBxCustomerId" Text="{Binding Path=ACId}" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" Margin="877,24,0,0" FontSize="18"/>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="737" Margin="71,82,0,0">
             <TextBlock x:Name="TxtBlkCustomerStreet" TextWrapping="Wrap" Text="Street Address" Margin="0,0,20,0" Width="74" TextAlignment="Center" FontSize="16" Padding="0"/>
-            <TextBox x:Name="TxtBxCustomerStreet" TextWrapping="Wrap" Margin="0" Width="641" Height="47"/>
+            <TextBox x:Name="TxtBxCustomerStreet" Text="{Binding Path=ACStreet}" TextWrapping="Wrap" Margin="0" Width="641" Height="47"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="737" Margin="71,149,0,0">
             <TextBlock x:Name="TxtBlkCustomerCity" TextWrapping="Wrap" Text="City" TextAlignment="Center" FontSize="14" Width="93" Height="20" HorizontalAlignment="Center"/>
-            <TextBox x:Name="TxtBxCustomerCity" TextWrapping="Wrap" Width="644" Margin="0,0,0,0.4"/>
+            <TextBox x:Name="TxtBxCustomerCity" Text="{Binding Path=ACCity}" TextWrapping="Wrap" Width="644" Margin="0,0,0,0.4"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="737" Margin="71,224,0,0">
             <TextBlock x:Name="TxtBlkCustomerState" TextWrapping="Wrap" Text="State" Width="90" FontSize="14" TextAlignment="Center" Margin="0" Height="16"/>
-            <TextBox x:Name="TxtBxCustomerState" TextWrapping="Wrap" Width="685" Margin="0,0,0,0.6"/>
+            <TextBox x:Name="TxtBxCustomerState" Text="{Binding Path=ACState}" TextWrapping="Wrap" Width="685" Margin="0,0,0,0.6"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="737" Margin="71,299,0,0">
             <TextBlock x:Name="TxtBlkCustomerZip" TextWrapping="Wrap" Text="Zip Code" TextAlignment="Center" Width="89" Margin="0" VerticalAlignment="Center"/>
-            <TextBox x:Name="TxtBxCustomerZip" Height="52" TextWrapping="Wrap" Width="648" Padding="0,0,5,0" VerticalAlignment="Bottom"/>
+            <TextBox x:Name="TxtBxCustomerZip" Text="{Binding Path=ACZipCode}" Height="52" TextWrapping="Wrap" Width="648" Padding="0,0,5,0" VerticalAlignment="Bottom"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="737" Margin="71,362,0,0">
             <TextBlock x:Name="TxtBlkCustomerEmail" TextWrapping="Wrap" Text="E-Mail" Margin="0,10,0,10.2" Width="88" FontSize="14" TextAlignment="Center"/>
-            <TextBox x:Name="TxtBxCustomerEmail" TextWrapping="Wrap" Margin="0,0,0,0.2" Width="686"/>
+            <TextBox x:Name="TxtBxCustomerEmail" Text="{Binding Path=ACEmail}" TextWrapping="Wrap" Margin="0,0,0,0.2" Width="686"/>
         </StackPanel>
 
 

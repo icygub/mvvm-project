@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,8 +19,16 @@ namespace Project.UserControls {
     /// Interaction logic for DeleteCustomerControl.xaml
     /// </summary>
     public partial class DeleteCustomerControl : UserControl {
+
+        private static MainWindowViewModel _model;
+
         public DeleteCustomerControl() {
             InitializeComponent();
+            DataContext = _model;
+        }
+
+        private void BtnDeletePlane_Click(object sender, RoutedEventArgs e) {
+
         }
     }
 }

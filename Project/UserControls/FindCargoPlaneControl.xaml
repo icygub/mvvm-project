@@ -9,8 +9,8 @@
     <Grid>
         <TextBlock x:Name="TxtBlkSearchByCustomerName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Number" VerticalAlignment="Top" Margin="91,109,0,0" Height="31" Width="90" FontSize="18" TextAlignment="Center"/>
 
-        <TextBox x:Name="TxtBxSearchByNumber" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="759" Margin="186,100,0,0" FontSize="24"/>
-        <Button x:Name="BtnFindPlane" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="202" Margin="465,176,0,0" Height="53" FontSize="18"/>
+        <TextBox x:Name="TxtBxSearchByNumber" Text="{Binding Path=FPNumber}" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="759" Margin="186,100,0,0" FontSize="24"/>
+        <Button x:Name="BtnFindPlane" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="202" Margin="465,176,0,0" Height="53" FontSize="18" Click="BtnFindPlane_Click"/>
 
     </Grid>
 </UserControl>

@@ -13,25 +13,25 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal"  HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="737" Margin="71,10,0,0">
             <TextBlock x:Name="TxtBlkPlaneNumber" TextWrapping="Wrap" Text="Plane Number" Margin="0,0,20,0" Padding="0" TextAlignment="Center" VerticalAlignment="Center" Width="74" Height="30" HorizontalAlignment="Center"/>
-            <TextBox x:Name="TxtBxPlaneNumber" TextWrapping="Wrap" Width="642" Margin="0" FontSize="20" Padding="0,0,0,5" Height="48"/>
+            <TextBox x:Name="TxtBxPlaneNumber" Text="{Binding Path=APNumber}" TextWrapping="Wrap" Width="642" Margin="0" FontSize="20" Padding="0,0,0,5" Height="48"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="737" Margin="71,82,0,0">
             <TextBlock x:Name="TxtBlkCompany" TextWrapping="Wrap" Text="Company" Margin="0,0,20,0" Width="74" TextAlignment="Center" FontSize="16" Padding="0"/>
-            <TextBox x:Name="TxtBxCompany" TextWrapping="Wrap" Margin="0" Width="641" Height="47" FontSize="20"/>
+            <TextBox x:Name="TxtBxCompany" Text="{Binding Path=APCompany}" TextWrapping="Wrap" Margin="0" Width="641" Height="47" FontSize="20"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="737" Margin="71,149,0,0">
             <TextBlock x:Name="TxtBlkMileage" TextWrapping="Wrap" Text="Mileage Per Tank" TextAlignment="Center" FontSize="14" Width="93" HorizontalAlignment="Center" Margin="0,0,0,0.2"/>
-            <TextBox x:Name="TxtBxMileage" TextWrapping="Wrap" Width="644" Margin="0,0,0,0.4" FontSize="20"/>
+            <TextBox x:Name="TxtBxMileage" Text="{Binding Path=APMileage}" TextWrapping="Wrap" Width="644" Margin="0,0,0,0.4" FontSize="20"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="737" Margin="71,224,0,0">
             <TextBlock x:Name="TxtBlkSeatCapacity" TextWrapping="Wrap" Text="Seat Capacity" Width="90" FontSize="14" TextAlignment="Center" Margin="0,18,0,10.2"/>
-            <TextBox x:Name="TxtBxSeatCapacity" TextWrapping="Wrap" Width="685" Margin="0,0,0,0.6" FontSize="20"/>
+            <TextBox x:Name="TxtBxSeatCapacity" Text="{Binding Path=APSeatCapacity}" TextWrapping="Wrap" Width="685" Margin="0,0,0,0.6" FontSize="20"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="737" Margin="71,299,0,0">
             <TextBlock x:Name="TxtBlkWeightCapacity" TextWrapping="Wrap" Text="Weight Capacity (lbs)" TextAlignment="Center" Width="89" VerticalAlignment="Center" Height="52"/>
-            <TextBox x:Name="TxtBxWeightCapacity" Height="52" TextWrapping="Wrap" Width="648" Padding="0,0,5,0" VerticalAlignment="Bottom" FontSize="20"/>
+            <TextBox x:Name="TxtBxWeightCapacity" Text="{Binding Path=APWeightCapacity}" Height="52" TextWrapping="Wrap" Width="648" Padding="0,0,5,0" VerticalAlignment="Bottom" FontSize="20"/>
         </StackPanel>
 
-        <Button x:Name="BtnAddCargoPlane" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="196" Margin="384,90.2,0,0" Height="86" FontSize="20" Grid.Row="1"/>
+        <Button x:Name="BtnAddCargoPlane" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="196" Margin="384,90.2,0,0" Height="86" FontSize="20" Grid.Row="1" Click="BtnAddCargoPlane_Click"/>
     </Grid>
 </UserControl>
